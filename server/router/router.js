@@ -4,7 +4,6 @@ const User = require('../models/user')
 
 
 router.post('/signup',async(req,res)=>{
-  console.log(req.body);
 try {
     const {firstname,email,passcord}=req.body
     const data = await new User({
